@@ -1,0 +1,24 @@
+// for lex 
+
+lex filename.l
+
+gcc lex.yy.c OR gcc lex.yy.c -ll
+
+./a.out
+
+
+// for lex + yacc
+
+lex filename.l
+
+yacc -d filename.y
+
+gcc lex.yy.c y.tab.c -ll
+
+./a.out
+
+// for c program
+
+gcc filename.c
+
+./a.out
